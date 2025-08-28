@@ -1,6 +1,6 @@
 import random
-from ascii_art import STAGES
 
+from ascii_art import STAGES
 
 
 def get_random_word():
@@ -30,7 +30,7 @@ def play_game():
     max_mistakes = 3
 
     print("Welcome to Snowman Meltdown!")
-    #For now, display the initial game state
+    # For now, display the initial game state
     display_game_state(mistakes, secret_word, guessed_letters)
 
     while mistakes < max_mistakes:
@@ -70,7 +70,6 @@ def play_game():
         print("Thanks for playing!")
     else:
         print("Invalid input. Please enter 'Y' or 'N'.")
-
 
 
 if __name__ == "__main__":
