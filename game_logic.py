@@ -64,18 +64,6 @@ def play_game():
     else:
         print(f"Game over! The word was {secret_word}. Good luck next time!")
 
-    while True:
-        play_again = input("Do you want to play again? (Y/N): ").lower()
-
-        if play_again == "y":
-            play_game()
-            break
-        elif play_again == "n":
-            print("Thanks for playing!")
-            break
-        else:
-            print("Invalid input. Please enter 'Y' or 'N'.")
-
 
 def main():
     """main function with game restart"""
@@ -86,6 +74,7 @@ def main():
             play_again = input("Do you want to play again? (Y/N): ").lower()
 
             if play_again == "y":
+                print("\n")
                 break
             elif play_again == "n":
                 print("Thanks for playing!")
