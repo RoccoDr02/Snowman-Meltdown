@@ -6,8 +6,8 @@ from ascii_art import STAGES
 def get_random_word():
     """returns a random word from a list of words"""
     words = ["python", "git", "github", "snowman", "meltdown"]
-    secret_word = random.choice(words)
-    return secret_word
+    return random.choice(words)
+
 
 
 def display_game_state(mistakes, secret_word, guessed_letters):
