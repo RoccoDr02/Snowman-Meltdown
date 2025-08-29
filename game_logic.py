@@ -77,5 +77,22 @@ def play_game():
             print("Invalid input. Please enter 'Y' or 'N'.")
 
 
+def main():
+    """main function with game restart"""
+    while True:
+        play_game()
+
+        while True:
+            play_again = input("Do you want to play again? (Y/N): ").lower()
+
+            if play_again == "y":
+                break
+            elif play_again == "n":
+                print("Thanks for playing!")
+                return
+            else:
+                print("Invalid input. Please enter 'Y' or 'N'.")
+
+
 if __name__ == "__main__":
-    play_game()
+    main()
